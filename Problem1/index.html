@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <title>Problem 1</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+    <div id="wrapper">
+        <div id="editor">
+          <h2 id="editor-title">Note Application Problem 1</h2>
+          <label>Title:</label>
+          <input type="text" id="title" name="title" />
+          <label>Body:</label>
+          <textarea rows="10" cols="42" id="message" name="message"></textarea>
+          <label>Color:</label>
+          <select id="color" name="color">
+            <option value="red">red</option>
+            <option value="pink">pink</option>
+            <option value="yellow">yellow</option>
+            <option value="blue">blue</option>
+            
+          </select>
+          <div id="button">
+            <button id="btn">Create Note</button>
+            <div id="error"></div>
+          </div>
+        </div>
+    
+        <div id="notes-section">
+          <h2>Notes</h2>
+          <ul id="notes"></ul>
+        </div>
+      </div>
+
+      <script src="https://cdnjs.cloudflare.com/ajax/libs/rxjs/7.8.1/rxjs.umd.min.js"></script>
+    <script src="java.js"></script>
+</body>
+
+</html>
