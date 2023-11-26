@@ -1,0 +1,20 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Note Management</title>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/rxjs/7.8.1/rxjs.umd.min.js"></script>
+    <script src="java.js"></script>
+    <link rel="stylesheet" type="text/css" href="style.css">
+</head>
+<body>
+    <button id="new-note">New Note</button>
+    <div id="notes"></div>
+
+    <script>
+        document.getElementById('new-note').addEventListener('click', function() {
+            const note = new Note();
+            document.getElementById('notes').appendChild(note.element);
+        });
+    </script>
+</body>
+</html>
